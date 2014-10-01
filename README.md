@@ -2694,31 +2694,28 @@ condition](#safe-assignment-in-condition).
   ```
 
 * <a name="percent-w"></a>
-  Prefer `%w` to the literal array syntax when you need an array of words
-  (non-empty strings without spaces and special characters in them).  Apply this
-  rule only to arrays with two or more elements.
+  Prefer the literal array syntax to `%w` for an array of words
+  (non-empty strings without spaces and special characters in them).
 <sup>[[link](#percent-w)]</sup>
 
   ```Ruby
   # bad
-  STATES = ['draft', 'open', 'closed']
+  STATES = %w(draft open closed)
 
   # good
-  STATES = %w(draft open closed)
+  STATES = ['draft', 'open', 'closed']
   ```
 
 * <a name="percent-i"></a>
-  Prefer `%i` to the literal array syntax when you need an array of symbols
-  (and you don't need to maintain Ruby 1.9 compatibility). Apply this rule only
-  to arrays with two or more elements.
+  Prefer the literal array syntax to `%i` when you need an array of symbols.
 <sup>[[link](#percent-i)]</sup>
 
   ```Ruby
   # bad
-  STATES = [:draft, :open, :closed]
+  STATES = %i(draft open closed)
 
   # good
-  STATES = %i(draft open closed)
+  STATES = [:draft, :open, :closed]
   ```
 
 * <a name="no-trailing-array-commas"></a>
