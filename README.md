@@ -3,27 +3,14 @@
 > Role models are important. <br/>
 > -- Officer Alex J. Murphy / RoboCop
 
-One thing has always bothered me as a Ruby developer - Python developers have a
-great programming style reference
-([PEP-8][]) and we never got an official
-guide, documenting Ruby coding style and best practices. And I do believe that
-style matters. I also believe that a great hacker community, such as Ruby has,
-should be quite capable of producing this coveted document.
+This guide started its life as bbatsov's
+[Ruby Style Guide](https://github.com/bbatsov/ruby-style-guide).
+This fork is for Indiegogo's Ruby projects.
+The work of customizing this fork for Indiegogo is not yet complete,
+so please read it with that in mind.
 
-This guide started its life as our internal company Ruby coding guidelines
-(written by yours truly). At some point I decided that the work I was doing
-might be interesting to members of the Ruby community in general and that the
-world had little need for another internal company guideline. But the world
-could certainly benefit from a community-driven and community-sanctioned set of
-practices, idioms and style prescriptions for Ruby programming.
-
-Since the inception of the guide I've received a lot of feedback from members of
-the exceptional Ruby community around the world. Thanks for all the suggestions
-and the support! Together we can make a resource beneficial to each and every
-Ruby developer out there.
-
-By the way, if you're into Rails you might want to check out the complementary
-[Ruby on Rails Style Guide][rails-style-guide].
+By the way, if you're into Rails you might want to check out bbatsov's
+complementary [Ruby on Rails Style Guide][rails-style-guide].
 
 # The Ruby Style Guide
 
@@ -33,11 +20,11 @@ programmers. A style guide that reflects real-world usage gets used, and a style
 guide that holds to an ideal that has been rejected by the people it is supposed
 to help risks not getting used at all &ndash; no matter how good it is.
 
-The guide is separated into several sections of related rules. I've tried to add
-the rationale behind the rules (if it's omitted I've assumed it's pretty
+The guide is separated into several sections of related rules. We've tried to add
+the rationale behind the rules (if it's omitted we've assumed it's pretty
 obvious).
 
-I didn't come up with all the rules out of nowhere - they are mostly based on my
+bbatsov didn't come up with all the original rules out of nowhere - they are mostly based on his
 extensive career as a professional software engineer, feedback and suggestions
 from members of the Ruby community and various highly regarded Ruby programming
 resources, such as ["Programming Ruby
@@ -48,8 +35,7 @@ Language"][trpl].
 There are some areas in which there is no clear consensus in the Ruby community
 regarding a particular style (like string literal quoting, spacing inside hash
 literals, dot position in multi-line method chaining, etc.). In such scenarios
-all popular styles are acknowledged and it's up to you to pick one and apply it
-consistently.
+all popular styles are acknowledged and it's up to Indiegogo to pick one.
 
 This style guide evolves over time as additional conventions are
 identified and past conventions are rendered obsolete by changes in
@@ -62,20 +48,8 @@ project-specific guides take precedence for that project.
 You can generate a PDF or an HTML copy of this guide using
 [Transmuter][].
 
-[RuboCop][] is a code analyzer, based on this
+[RuboCop][] is a code analyzer, based on the original
 style guide.
-
-Translations of the guide are available in the following languages:
-
-* [Chinese Simplified](https://github.com/JuanitoFatas/ruby-style-guide/blob/master/README-zhCN.md)
-* [Chinese Traditional](https://github.com/JuanitoFatas/ruby-style-guide/blob/master/README-zhTW.md)
-* [French](https://github.com/porecreat/ruby-style-guide/blob/master/README-frFR.md)
-* [Japanese](https://github.com/fortissimo1997/ruby-style-guide/blob/japanese/README.ja.md)
-* [Portuguese](https://github.com/rubensmabueno/ruby-style-guide/blob/master/README-PT-BR.md)
-* [Russian](https://github.com/arbox/ruby-style-guide/blob/master/README-ruRU.md)
-* [Spanish](https://github.com/alemohamad/ruby-style-guide/blob/master/README-esLA.md)
-* [Vietnamese](https://github.com/scrum2b/ruby-style-guide/blob/master/README-viVN.md)
-* [Korean](https://github.com/dalzony/ruby-style-guide/blob/master/README-koKO.md)
 
 ## Table of Contents
 
